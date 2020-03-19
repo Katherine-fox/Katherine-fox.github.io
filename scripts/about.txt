@@ -1,0 +1,45 @@
+Project "Cryptonite"
+Created by student Belianska Katerina
+of John Bryce, course "Full Stack Web Developer"
+
+---
+Quick overview:
+The site provides info and data on virtual currencies.
+
+--
+Pages description:
+On the HOME page, you can list cards of existing currencies, filter the cards by their codes or by the toggled sign. You can review the basic info about a currency (press the "More info" button on a card of the selected currency). Besides that, you can select up to 5 currency cards to review live price data on the page "LIVE REPORTS" (please, use the toggle widget at the upright corner of cards)
+
+The "LIVE REPORTS" page provides a chart of price data for toggled currencies (how to toggle currency see above in the HOME page section). The data have been updating in real-time each 2 sec.
+
+The "ABOUT" page contains this info
+
+---
+Technical details:
+This site is a Single Page Application that uses on the backend part the following external sources (APIs):
+* The list of virtual currencies: https://www.coingecko.com/en/api#/
+* The detailed info about currency: https://min-api.cryptocompare.com/
+* The chart representing Live Reports: https://developers-dot-devsite-v2-prod.appspot.com/chart/interactive/docs/gallery/linechart
+
+This app uses the following techniques:
+* HTML and styling
+* HTML5
+* CSS3 media queries and advanced selectors
+* Dynamic page layouts
+* Bootstrap and Flex 
+
+Functionality
+* Javascript
+* JQuery
+* JQuery UI
+* Async/Await, Promises and Callbacks
+* Classes
+* Handling events 
+* Fetching/processing data from internal and external sources (see above the list of the used external APIs)
+
+Data storing
+* JSON files
+* Session Storage
+
+
+(c) 2020 Belianska Katerina.

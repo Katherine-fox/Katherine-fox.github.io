@@ -1,0 +1,33 @@
+{
+    "html_template": "<div id='home_id_container'><div id='more_info_container' title='More info'></div><div id='replace_currency_container' title='Replace currency'></div><div class='d-flex flex-wrap' id='cards_container'>Data have not been loaded. Please, check your connection to Internet and refresh this page.</div></div>",
+    "card_template": "<div class='card text-white bg-dark mb-3' style='max-width: 20rem; margin: 1em;' id='-CurrencyID-'> <div class='card-body'> <h4 class='card-title'>-CurrencyTitle-<span class='currency_toggle'><input type='checkbox' class='currency_checkbox' name='-CurrencyID-' -Toggled-></span></h4><p class='card-text'>-CurrencyDescription-</p><button class='btn btn-secondary my-2 my-sm-0 currency_more_info' name='-CurrencyID-'>More info...</button></div></div>",
+    "menu_load_function": "load_currency_cards",
+    "refresh_function":"initiateHomePage",
+    "list_all_api":"https://api.coingecko.com/api/v3/coins/list",
+    "max_count_cards": 100,
+    "max_toggled" : 5,
+    "parent_container_id":"home_id_container",
+    "cards_container_id":"cards_container",
+    "more_info":{
+        "template_wait":"<div id='more_info_dialog'> <div class='progress'><div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar' aria-valuenow='75' aria-valuemin='0' aria-valuemax='100' style='width: 100%'>LOADING...</div> </div></div>",
+        "template":"<div id='more_info_dialog'></div><img class='fit-picture' src='-CurrencyImg-'><div>-Prices-</div><div>the info will expire at -DateTime- sec</div></div>",
+        "container_id":"more_info_container",
+        "dialog_id":"more_info_dialog",
+        "api":"https://api.coingecko.com/api/v3/coins/-CurrencyID-",
+        "prices": {
+            "template":"<div><label>-value-</label> <label>-from_code-</label> for <label>-multiplier-</label><label>-to_symbol-</label> (<label>-to_code-</label>)</div>",
+            "multiplier": 100,
+            "what":{
+                "usd":"$",
+                "eur":"€",
+                "ils":"₪"
+            }
+        }
+    },
+    "replace_currency":{
+        "container_id":"replace_currency_container",
+        "template_wait":"<div id='replace_currency_dialog'><div class='progress'><div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar' aria-valuenow='75' aria-valuemin='0' aria-valuemax='100' style='width: 100%'>WAIT...</div> </div></div>",
+        "template":"<div id='replace_currency_dialog'><h6 class='exclamation'>Max number of -MaxToggled- toggled currencies is exceeded !!!</h6><p style='width:100%;'>Please, toggle off one currency and press \"Replace ...\" button.</p><div>-ToggledCurrencies-</div></div>",
+        "toggled_template":"<div class='card text-white bg-dark mb-3' style=' height:3em; width:100%;' id='-CurrencyID-'> <div class='card-body'> <h6 class='card-title'>-CurrencyTitle-<span class='currency_toggle'><input type='checkbox' class='currency_checkbox replace_toggled' name='-CurrencyID-' checked></span></h6></div></div>"
+    }
+}

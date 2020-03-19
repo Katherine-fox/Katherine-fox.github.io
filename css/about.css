@@ -1,0 +1,38 @@
+.about_h4{
+    text-align: center;
+    float: right;
+}
+.about_h5{
+    margin: 1em;
+}
+
+#fig {
+    text-align: center;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+    border-radius: 20%;
+    box-shadow: 0 0 0 1px #232323;
+}
+
+.about_p{
+    
+    color: #414141;
+}
+
+.about_ul{
+    color: #414141;
+    margin-left: 3%;
+    padding-left: 3%;
+}
+
+.about_li{
+    margin-left: 2em;
+    color: #414141;
+}
+
+.about_h6{
+    text-align: center;
+}

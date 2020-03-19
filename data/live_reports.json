@@ -1,0 +1,25 @@
+{
+    "html_template":"<div id='live_reports_container'><div class='d-flex flex-wrap' id='chart_container'>Data have not been loaded. Please, check your connection to Internet and refresh this page.</div></div>",
+    "parent_container_id":"live_reports_container",
+    "chart_container_id": "chart_container",
+    "api_template": "https://min-api.cryptocompare.com/data/pricemulti?fsyms=-ToggledCurrencies-&tsyms=USD",
+    "menu_load_function": "load_live_reports",
+    "refresh_function":"initiateLiveReportsPage",
+    "chart_template":"<div><img src='pict/grey-1428508_960_720.png' id='live_report_updating_sign' class='updating_signs'></div><div id='live_report_chart' style='width: 100%;'>Please, wait...</div>",
+    "chart_id":"live_report_chart",
+    "updating_signs":{
+        "id": "live_report_updating_sign",
+        "wait_img":"pict/grey-1428508_960_720.png",
+        "updating_img":"pict/green-1428507_960_720.webp",
+        "error_img":"pict/red-button-1426817_960_720.webp"
+    },
+    "to_currency_symbol": "USD",
+    "chart_options":{
+        "width": "100%",
+        "height" : 500,
+        "h_title" :"-FromSymbols- to -Multiplier- -ToSymbol-",
+        "v_title" :"Coin values",
+        "multiplier": 100,
+        "interval": 2000
+    }
+}

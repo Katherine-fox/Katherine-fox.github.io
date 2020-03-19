@@ -1,0 +1,20 @@
+{
+    "all_menu_items":{
+        "home": {
+            "name": "Home",
+            "tooltip": "Show a list of currencies",
+            "my_src": "home"
+        },
+        "reports": {
+            "name": "Live reports",
+            "tooltip": "Show live reports",
+            "my_src": "live_reports"
+        },
+        "about": {
+            "name": "About",
+            "tooltip": "Info about the project",
+            "my_src": "about"
+        }
+    },
+    "menu_item_template":"<li class='nav-item'><a class='nav-link menu_item' id='-MenuKey-' href='#' data-toggle='tooltip' title='-MenuTooltip-'>-MenuName-<span class='sr-only'>(current)</span></a></li>"
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> 
+    <link rel="stylesheet" type="text/css" href="css/main.css"> 
+    <link rel="stylesheet" type="text/css" href="css/home.css"> 
+    <link rel="stylesheet" type="text/css" href="css/live_reports.css"> 
+    <link rel="stylesheet" type="text/css" href="css/about.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/eggplant/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  </head>
+  
+
+  <body>
+    <div class="header">
+        <h1>Cryptonite </h1>
+        <img src="pict/crypto_image.jpg" class="pict1">
+    </div>
+    <br><br><br><br><br><br>
+    <div id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="navbar-collapse collapse show" id="navbarColor01">
+              <ul class="navbar-nav mr-auto" id="menu"> 
+              </ul> 
+              <form class="form-inline my-2 my-sm-0" id="search_form">
+                <div class="div_filter_toggled">
+                  <span><input type='checkbox' id='filter_toggled'></span>
+                  <label class="label_filter_toggled" for='filter_toggled'>Show toggled only</label>
+                </div>
+                <input class="form-control mr-sm-2" type="search" placeholder="Enter code to search" id='search_code'>
+                <button class="btn btn-secondary my-2 my-sm-0" id='search_button'>Search</button>
+              </form>
+            </div>
+          </nav>
+    </div>
+    <div id="wait_dialog" >
+      
+    </div>
+    <div id="loader_ring">
+      Loading
+      <span id="loader_span"></span>
+    </div>
+    <div id="error_dialog" title="ERROR!">
+      <h6 class='exclamation' id="error_message"></h6>
+    </div>
+    <div id="container"> </div>
+    
+    <script src="./scripts/utils.js"></script>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/home.js"></script>
+    <script src="./scripts/live_reports.js"></script>
+    <script src="./scripts/about.js"></script>
+  </body>
+</html>
